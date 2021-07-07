@@ -9,7 +9,8 @@ form {
     margin-right: auto;
     width: 14em;
     font-weight: bold; 
-    color: blue;
+    color: rgb(184, 240, 32);
+    font-size: 1.2em;
 }
 
 input {
@@ -22,6 +23,7 @@ textarea {
     resize: none;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+    margin-right: 1em;
 }
 
 input, textarea {
