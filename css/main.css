@@ -1,60 +1,66 @@
 body {
-  background-image: url(../images/b0fe7968d609e092852ab455c2e7f116.jpg);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 
-form {
-  padding: 5em 2em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 14em;
-  font-weight: bold;
-  color: #b8f020;
-  font-size: 1.2em;
+.main-list {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20 px 0 12px 0;
+}
+
+.login {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
 }
 
 input {
+  height: 45px;
   width: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-textarea {
-  resize: none;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-right: 1em;
-}
-
-input, textarea {
   outline: none;
-  border: 1px solid #ddd;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
-  -webkit-box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
-          box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
-  border: 1px solid #ddd;
+input:focus,
+input:valid {
+  border-color: #9b59b6;
 }
 
-::-webkit-input-placeholder {
-  color: #850b6a;
-  opacity: 1;
-}
-
-:-ms-input-placeholder {
-  color: #850b6a;
-  opacity: 1;
-}
-
-::-ms-input-placeholder {
-  color: #850b6a;
-  opacity: 1;
-}
-
-::placeholder {
-  color: #850b6a;
-  opacity: 1;
+.details .login .info {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
 button {
@@ -71,5 +77,10 @@ button {
   width: unset;
   cursor: pointer;
   margin-bottom: 0.5em;
+  width: 20%;
+}
+
+select {
+  width: 20%;
 }
 /*# sourceMappingURL=main.css.map */
